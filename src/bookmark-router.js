@@ -50,7 +50,7 @@ bookmarkRouter
   });
 
 bookmarkRouter
-  .route('/bookmark/:id')
+  .route('/bookmarks/:bookmark_id')
   .get((req, res) => {
     const { bookmark_id } = req.params;
     const bookmark = store.bookmarks.find(mark => mark.id === bookmark_id);
